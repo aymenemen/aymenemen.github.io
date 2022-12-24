@@ -1,0 +1,79 @@
+body{
+    background-image: url(../media/nikebg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: #F3EFE0;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+}
+ul{
+    margin-left: 100px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    color:  #F3EFE0;
+    transition: all 0.5s ease ;
+
+}
+li a:hover{
+    color: #434242;
+    font-size: 23px;
+   
+}
+button{
+    padding: 9px 25px;
+    background-color: black;
+    color: #F3EFE0;
+    text-decoration: none;
+    border: 8px solid #F3EFE0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+    margin-right: 25px;
+
+}
+button:hover{
+    background-color: #F3EFE0;
+    color: black;
+    scale: 1.10;
+}
+h1{
+    font-size: 150px;
+}
+h2{
+    font-size: 30px;
+    margin-top: -2.5vh;
+}
+.title{
+    position: absolute;
+    left: 50vh;
+}
+.btn1{
+    padding: 15px 50px;
+    background-color: black;
+    color: #F3EFE0;
+    text-decoration: none;
+    border: 8px solid #F3EFE0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+    margin-right: 25px;
+    font-size: large;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background-color: #F3EFE0;
+    color: black;
+    scale: 1.10;
+}
