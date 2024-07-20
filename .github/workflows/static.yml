@@ -31,10 +31,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Move HTML files to root
+        run: |
+          mkdir -p ./public
+          mv ./projet_store/html/* ./public/
+          mv ./projet_store/css ./public/
+          mv ./projet_store/js ./public/
+          mv ./projet_store/media ./public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './projet_store/html'
+          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
